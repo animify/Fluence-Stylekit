@@ -1,5 +1,5 @@
 {
-  "name": "@stylekit/site",
+  "name": "@fluence-stylekit/site",
   "version": "0.0.1",
   "scripts": {
     "start": "rimraf ./dist && webpack-dev-server --config webpack.config.client.js",

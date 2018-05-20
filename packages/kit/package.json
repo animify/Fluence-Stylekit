@@ -1,14 +1,14 @@
 {
-  "name": "@stylekit/kit",
+  "name": "@fluence-stylekit/kit",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/animify/stylekit/tree/master/packages/kit"
+    "url": "git+https://github.com/animify/fluence-stylekit/tree/master/packages/kit"
   },
   "author": "Stefan Mansson(https://mansson.io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/animify/stylekit/issues"
+    "url": "https://github.com/animify/fluence-stylekit/issues"
   },
   "dependencies": {
     "foovar": "^0.6.2",
