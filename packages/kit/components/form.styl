@@ -14,7 +14,10 @@
         max-height: 16rem;
         resize: vertical;
 
-    input[type='text'], input[type='number'], input[type='password'], input[type='email'], textarea
+    select
+        appearance: none;
+
+    input[type='text'], input[type='number'], input[type='password'], input[type='email'], textarea, select
         @extend .ph3, .pv2;
         min-width: 21.6rem;
         outline: 0;
@@ -34,7 +37,7 @@
         & + label
             @extend .mb2;
             order: 1;
-            font-weight: $fontWeight.bold;
+            font-weight: $fontWeight.semiBold;
 
         &:hover
             border-color: $color.smoke;

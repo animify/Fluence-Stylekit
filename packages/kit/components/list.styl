@@ -88,14 +88,18 @@
             flex-direction: row;
             position: relative;
 
+            & + li, & + .item
+                @extend .pt7, .mt7;
+
             .upvote
-                @extend .pr6, .mr6;
+                @extend .pv3, .ph4, .mr6;
                 text-align: center;
-                border-right: 1px solid $color.dim;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                background-color: $color.snow;
+                border-radius: $borderRadius.base;
 
             .details
                 display: flex;

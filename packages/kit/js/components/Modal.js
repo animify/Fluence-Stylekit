@@ -10,7 +10,12 @@ export default class Modal {
             const modalName = $(e.target).attr('modal-toggle');
             this.toggle(modalName);
         }).on('click', '[modal-cancel]', (e) => {
-            const modalName = $(e.target).parents('.modal-container').attr('modal-name');
+            let modalName = $(e.target).attr('modal-cancel');
+
+            if (!modalName) {
+                modalName = $(e.target).parents('.modal-container').attr('modal-name');
+            }
+
             this.close(modalName);
         });
     }
