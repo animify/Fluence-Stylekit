@@ -1,0 +1,27 @@
+[
+    {
+        "folder": "alignment",
+        "title": "Alignment",
+        "descHtml": "Align components within relative parent containers."
+    },
+    {
+        "folder": "animation",
+        "title": "Animations",
+        "descHtml": "Add landing or infinite animations to add life to your layout."
+    },
+    {
+        "folder": "container",
+        "title": "Containers",
+        "descHtml": "Containers bind your content together to form the layout."
+    },
+    {
+        "folder": "flex",
+        "title": "Flex Layout",
+        "descHtml": "Helper classes to assist with positioning flex elements."
+    },
+    {
+        "folder": "grid",
+        "title": "Grid System",
+        "descHtml": "A flexible grid system tailored for responsive layouts."
+    }
+]

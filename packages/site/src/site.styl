@@ -1,0 +1,188 @@
+@import 'nib';
+@import 'jeet';
+@import 'rupture';
+@import './../../kit/variables/*';
+@import './styles/*';
+
+.layout
+    margin: 9.4rem 0;
+
+.hero
+    margin: 0 0 4rem;
+
+    h4
+        color: $textColor.body;
+        font-weight: $fontWeight.book;
+
+.menu
+    .set
+        display: inline;
+
+    .set > .selecteditem
+        relative: top .4rem left 2.4rem;
+        font-weight: 500;
+        color: $color.base;
+        border-left: 2px solid;
+        padding-left: 2.4rem;
+
+        svg
+            width: 1.6rem;
+            height: 1.6rem;
+            relative: top .2rem left .4rem;
+
+.guide
+    & + .guide
+        margin-top: 8rem;
+
+    &-description
+        width: 100%;
+        display: block;
+
+        p
+            font-size: $fontSize.h5;
+
+    &-subsection
+        border-top: 1px solid $color.dim;
+        margin-top: 3.6rem;
+        padding-top: 3.6rem;
+
+        & .guide-subsection-description > h4
+            margin-bottom: .4rem;
+
+        .row + .row
+            margin-top: 2.4rem;
+
+        .module
+            position: relative;
+
+            .container
+                background-color: $color.black;
+                height: 120px;
+                width: 320px;
+                margin: 0 auto;
+                border-radius: $borderRadius.base;
+
+                &.fluid
+                    width: 100%;
+
+            & > .content
+                border-radius: $borderRadius.base;
+                margin: 2rem 0;
+
+                .nav.menu
+                    position: static;
+
+                .progress + .progress
+                    margin-top: 1rem;
+
+                .button + .button, .label + .label
+                    margin-left: 1rem;
+
+            & > .snippet
+                position: relative;
+
+                code + code
+                    padding-left: 4.4rem;
+
+            &.open
+                & > .toggle
+                    background-color: $color.white;
+
+                & > .snippet
+                    display: block;
+
+.variable-samples
+    margin-top: -4rem;
+
+.variable-sample
+    .inner
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1 0 100%;
+        justify-content: flex-start;
+        margin-top: 2rem;
+
+    &.color
+        .inner
+            .style
+                content: ' ';
+                width: 100%;
+                border-radius: $borderRadius.small;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.4rem 1.6rem;
+
+            .name
+                text-transform: capitalize;
+                color: $color.white;
+                font-weight: $fontWeight.bold;
+
+            .about
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .var
+                    color: $color.white;
+                    font-weight: $fontWeight.semiBold;
+
+                .hex
+                    margin-left: 1rem;
+                    color: $color.white;
+                    text-transform: uppercase;
+                    letter-spacing: .4px;
+                    font-weight: $fontWeight.semiBold;
+                    opacity: .6;
+                    line-height: $lineHeight.body;
+
+            &.dark
+                .style
+                    box-shadow: inset 0 0 0 1px $color.dim;
+
+                .name, .about .var, .about .hex
+                    color: $textColor.heading;
+
+    &.shape
+        .inner
+            .style
+                display: inline-block;
+                content: ' ';
+                width: 8rem;
+                height: 8rem;
+                border-radius: $borderRadius.medium;
+                border: 1px solid $color.dim;
+
+            .about
+                display: flex;
+                flex-direction: column;
+                margin-top: .8rem;
+
+                strong
+                    color: $textColor.heading;
+
+                p
+                    margin-top: .2rem;
+                    color: $textColor.body;
+                    font-size: $fontSize.sub;
+                    letter-spacing: .4px;
+                    font-weight: $fontWeight.bold;
+
+    &.text
+        .inner
+            flex-direction: column;
+
+            .style
+                color: $textColor.heading;
+                width: 100%;
+
+            .about
+                display: flex;
+                flex-direction: column;
+
+                strong
+                    color: $textColor.heading;
+
+                small
+                    color: $textColor.body;

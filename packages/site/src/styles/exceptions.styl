@@ -1,0 +1,38 @@
+.exception
+    &-input
+        .input
+            & + .input
+                margin-top: 2rem;
+
+    &-flex
+        .flex
+            height: 100px;
+            background-color: $color.dim;
+
+            & + .flex
+                margin-top: .8rem;
+
+    &-flex-order
+        .flex
+            background-color: $color.dim;
+
+    &-self-align
+        [class*='self-']
+            background-color: $color.slate;
+            color: #fff;
+
+    &-table-elements
+        td
+            padding: .8rem;
+            background-color: $color.dim;
+
+            & + td
+                border-left: .4rem solid #fff;
+
+    &-flex-direction, &-flex-justify
+        .flex
+            background-color: $color.dim;
+            padding: .4rem;
+
+            & + .flex
+                margin-top: .8rem;

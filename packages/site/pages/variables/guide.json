@@ -1,0 +1,42 @@
+[
+    {
+        "id": "borderRadius",
+        "title": "Border Radius",
+        "description": "Base style border radius.",
+        "startsWith": "$borderRadius",
+        "propertyCss": "borderRadius",
+        "displayStyle": "shape"
+    },
+    {
+        "id": "boxShadow",
+        "title": "Box Shadow",
+        "description": "All the variables",
+        "startsWith": "$boxShadow",
+        "propertyCss": "boxShadow",
+        "displayStyle": "shape"
+    },
+    {
+        "id": "color",
+        "title": "Color Scheme",
+        "description": "The color variables used across the whole kit. Each subset of colors are aliases of colors from this scheme.",
+        "startsWith": "$color",
+        "propertyCss": "color",
+        "displayStyle": "color"
+    },
+    {
+        "id": "fontSize",
+        "title": "Font Size",
+        "description": "Font size variables can be used across the kit to change the size of text. The header sizes are automatically applied to header tags.",
+        "startsWith": "$fontSize",
+        "propertyCss": "fontSize",
+        "displayStyle": "text"
+    },
+    {
+        "id": "fontWeight",
+        "title": "Font Weight",
+        "description": "Font weight variables can be used across the kit to alter typography thickness.",
+        "startsWith": "$fontWeight",
+        "propertyCss": "fontWeight",
+        "displayStyle": "text"
+    }
+]

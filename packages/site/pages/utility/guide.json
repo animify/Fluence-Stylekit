@@ -1,0 +1,32 @@
+[
+    {
+        "folder": "breakpoint",
+        "title": "Breakpoints",
+        "descHtml": "Breakpoints help by providing classes that only activate on each Breakpoint Identifier."
+    },
+    {
+        "folder": "composition",
+        "title": "Composition",
+        "descHtml": "Utility classes to assist in positioning elements within your layout."
+    },
+    {
+        "folder": "modifiers",
+        "title": "Modifiers",
+        "descHtml": "Modifiers change certain properties on a given element."
+    },
+    {
+        "folder": "typography",
+        "title": "Typography",
+        "descHtml": "Modify text properties using typography utilities."
+    },
+    {
+        "folder": "verticalalign",
+        "title": "Vertical Align",
+        "descHtml": "Align various types of elements across the vertical axis."
+    },
+    {
+        "folder": "visibility",
+        "title": "Visibility",
+        "descHtml": "Alter the visibility of elements on the page."
+    }
+]

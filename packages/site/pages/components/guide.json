@@ -1,0 +1,67 @@
+[
+    {
+        "folder": "accordion",
+        "title": "Accordion",
+        "descHtml": "Toggle and display sections of content."
+    },
+    {
+        "folder": "button",
+        "title": "Button",
+        "descHtml": "A button indicates a possible user action."
+    },
+    {
+        "folder": "dropdown",
+        "title": "Dropdown",
+        "descHtml": "A dropdown allows a user to select an option from a list of values."
+    },
+    {
+        "folder": "form",
+        "title": "Form Elements",
+        "descHtml": "Fields and action elements for forms."
+    },
+    {
+        "folder": "label",
+        "title": "Label",
+        "descHtml": "Highlight important words or phrases within your content."
+    },
+    {
+        "folder": "link",
+        "title": "Link",
+        "descHtml": "Anchor links can have different styles depending on its usage."
+    },
+    {
+        "folder": "list",
+        "title": "List",
+        "descHtml": "Useful for structuring data into organized lists."
+    },
+    {
+        "folder": "menu",
+        "title": "Menu",
+        "descHtml": "Menu components can be used for grouped navigation."
+    },
+    {
+        "folder": "modal",
+        "title": "Modal",
+        "descHtml": "Modal component."
+    },
+    {
+        "folder": "message",
+        "title": "Message",
+        "descHtml": "A simple way to alert a user with a certain behaviour."
+    },
+    {
+        "folder": "progress",
+        "title": "Progress Bars",
+        "descHtml": "Progess bars are used to indicate the progress state of a certain action."
+    },
+    {
+        "folder": "table",
+        "title": "Table",
+        "descHtml": "Present readable data in a two-dimensional table comprised of rows and columns."
+    },
+    {
+        "folder": "tooltip",
+        "title": "Tooltip",
+        "descHtml": "Add CSS-only helpers to hoverable elements using tooltips."
+    }
+]
