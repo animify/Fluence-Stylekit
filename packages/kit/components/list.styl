@@ -81,3 +81,31 @@
 
             & + li, & + .item
                 @extend .ml6;
+
+    &.styled
+        & > li, & > .item
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
+            .upvote
+                @extend .pr6, .mr6;
+                text-align: center;
+                border-right: 1px solid $color.dim;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+            .details
+                display: flex;
+                flex-direction: column;
+
+                .meta
+                    display: flex;
+                    flex-shrink: 0;
+                    flex-grow: 1;
+                    width: 100%;
+
+                    .list
+                        @extend .p0, .pt2, .m0;
