@@ -84,26 +84,31 @@
 
     &.styled
         & > li, & > .item
+            @extend .pv5, .ph6;
             display: flex;
             flex-direction: row;
             position: relative;
+            border: 1px solid $color.dim;
+            border-radius: $borderRadius.base;
 
             & + li, & + .item
-                @extend .pt7, .mt7;
+                @extend .mt4;
 
             .upvote
-                @extend .pv3, .ph4, .mr6;
+                @extend .mr6;
                 text-align: center;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
                 flex-direction: column;
-                background-color: $color.snow;
-                border-radius: $borderRadius.base;
+                font-size: $fontSize.small;
 
             .details
                 display: flex;
                 flex-direction: column;
+
+                h5
+                    color: inherit;
 
                 .meta
                     display: flex;

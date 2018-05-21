@@ -3,8 +3,10 @@
         line-height: $lineHeight.body;
         display: inline-block;
         font-weight: $fontWeight.semiBold;
-        @extend .link;
-        @extend .link.link-body;
+
+        a
+            @extend .link;
+            @extend .link.link-dark;
 
         &.active
             color: $color.base;

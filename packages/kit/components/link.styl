@@ -17,6 +17,19 @@
             content: ' ';
             absolute: bottom -1px left;
 
+    &.link-dark
+        color: $textColor.heading;
+
+        &.link-underline
+            &:before
+                border-color: @color;
+
+        &:hover
+            color: $color.base;
+
+        &:active
+            color: darken($color.base, 12%);
+
     &.link-body
         color: $textColor.body;
 
@@ -30,7 +43,7 @@
         &:active
             color: $color.black;
 
-    for $text in 'light' 'heading'
+    for $text in 'light'
         &.link-{$text}
             color: $textColor[$text];
 
