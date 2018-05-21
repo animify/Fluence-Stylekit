@@ -102,6 +102,14 @@
                 justify-content: flex-start;
                 flex-direction: column;
                 font-size: $fontSize.small;
+                cursor: pointer;
+
+                h4
+                    relative: top -.5rem;
+
+                &:hover
+                    svg
+                        animation: bounce $durationXXXL infinite cubic-bezier(0, 1.01, 0, .96);
 
             .details
                 display: flex;

@@ -3,19 +3,35 @@
     color: $color.base;
     position: relative;
 
+    svg
+        relative: top 3px;
+        height: 17px;
+        overflow: auto;
+        width: 16px;
+        color: $textColor.light;
+
     &:hover
         color: darken(@color, 12%);
+
+        svg
+            color: inherit;
 
     &:active
         color: darken(@color, 24%);
 
+        svg
+            color: inherit;
+
     &.link-underline
         &:before
-            border-bottom: 1px solid @color;
+            border-bottom: 1px dotted @color;
             opacity: .64;
             width: 100%;
             content: ' ';
             absolute: bottom -1px left;
+
+        &:hover:before
+            border-bottom: 1px solid @color;
 
     &.link-dark
         color: $textColor.heading;
@@ -27,8 +43,14 @@
         &:hover
             color: $color.base;
 
+            &:before
+                border-color: $color.base;
+
         &:active
             color: darken($color.base, 12%);
+
+            &:before
+                border-color: darken($color.base, 12%);
 
     &.link-body
         color: $textColor.body;

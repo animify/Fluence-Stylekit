@@ -288,3 +288,11 @@
 
     &-last
         order: 99999;
+
+for $breakpoint in $breakpointIdentifiers
+    +below($breakpoint)
+        .order-1\\\@{$breakpoint}
+            order: 1;
+
+        .order-2\\\@{$breakpoint}
+            order: 2;

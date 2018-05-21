@@ -1,0 +1,13 @@
+.filters
+    .toggle
+        font-weight: $fontWeight.semiBold;
+        @extend .link;
+        @extend .link.link-underline;
+        @extend .link.link-dark;
+        @extend .link.link-dark.link-underline;
+
+    & + main.row
+        @extend .mt3;
+
+h2 + .filters
+    @extend .mt8;
