@@ -67,3 +67,24 @@
 
         &::after
             transform: rotate(-45deg);
+
+.status
+    text-transform: uppercase;
+    font-weight: $fontWeight.bold;
+    letter-spacing: 1.4px;
+
+    &[type='SHOW_PENDING_REVIEW']
+        small
+            color: $color.yellow;
+
+    &[type='SHOW_PLANNED']
+        small
+            color: $color.blue;
+
+    &[type='SHOW_IN_PROGRESS']
+        small
+            color: $color.purple;
+
+    &[type='SHOW_COMPLETED']
+        small
+            color: $color.green;

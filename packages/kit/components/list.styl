@@ -77,18 +77,15 @@
 
     &.styled
         & > li, & > .item
-            @extend .pv5, .ph6;
             display: flex;
             flex-direction: row;
             position: relative;
-            border: 1px solid $color.dim;
-            border-radius: $borderRadius.base;
 
             & + li, & + .item
-                @extend .mt4;
+                @extend .mt7;
 
             .upvote
-                @extend .mr6;
+                @extend .mr7;
                 text-align: center;
                 display: flex;
                 align-items: center;
@@ -105,8 +102,11 @@
                         animation: bounce $durationXXXL infinite cubic-bezier(0, 1.01, 0, .96);
 
             .details
+                @extend .pb7;
                 display: flex;
                 flex-direction: column;
+                flex-grow: 1;
+                border-bottom: 1px solid $color.dim;
 
                 a
                     & + p
