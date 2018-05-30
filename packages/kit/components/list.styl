@@ -18,13 +18,6 @@
             display: block;
             font-weight: $fontWeight.semiBold;
 
-        &.active
-            padding-left: 1.6rem;
-            border-left: 3px solid $color.base;
-
-            a
-                color: $color.base;
-
     &.ordered
         counter-reset: orderedListItem;
 
@@ -115,8 +108,12 @@
                 display: flex;
                 flex-direction: column;
 
-                h5
-                    color: inherit;
+                a
+                    & + p
+                        @extend .mt1;
+
+                    & > *
+                        color: inherit;
 
                 .meta
                     display: flex;
