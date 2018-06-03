@@ -12,7 +12,17 @@
             color: $color.base;
 
         & + .item
-            @extend .ml4;
+            @extend .ml7;
+
+        .account
+            display: flex;
+            justify-content: center;
+
+            img
+                height: 32px;
+                width: 32px;
+                border-radius: $borderRadius.circle;
+                box-shadow: 0 0 0 2px $color.dim;
 
         &.header
             color: $textColor.heading;
@@ -129,12 +139,13 @@
 
 header
     width: 100%;
-    padding-left: 64.8px;
-    fixed: top left;
     cf();
 
     .menu
-        @extend .ph6, .pv3;
+        @extend .pv3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         display: flex;
         justify-content: space-between;
         align-items: center;
