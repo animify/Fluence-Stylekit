@@ -1,0 +1,32 @@
+.post
+    .options
+        margin: .4rem 0 2.4rem;
+
+    .by
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        align-items: flex-start;
+
+        .name
+            color: $textColor.heading;
+
+        .when
+            margin-left: .4rem;
+            relative: top .2rem;
+
+        .avatar
+            margin-right: 2.4rem;
+            height: 0;
+
+            img
+                max-width: 4.4rem;
+                max-height: 4.4rem;
+                border-radius: $borderRadius.circle;
+
+    .text
+        padding-left: 6.8rem;
+        margin-top: .4rem;
+
+    & + .comments
+        margin-top: 2.4rem;

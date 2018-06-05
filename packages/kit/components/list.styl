@@ -75,6 +75,11 @@
             & + li, & + .item
                 @extend .ml6;
 
+        &.compact
+            li, .item
+                & + li, & + .item
+                    @extend .ml4;
+
     &.styled
         & > li, & > .item
             display: flex;
