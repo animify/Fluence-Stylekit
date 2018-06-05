@@ -98,25 +98,39 @@
                 @extend .mt7;
 
             .upvote
-                @extend .mr7;
+                @extend .mr5, .ph2;
                 text-align: center;
                 display: flex;
+                align-self: flex-start;
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: column;
                 font-size: $fontSize.small;
                 cursor: pointer;
+                border-radius: $borderRadius.base;
+                border: 2px solid $color.dim;
+                relative: top 5px;
 
-                h5
-                    relative: top -.5rem;
+                h6
+                    relative: top -.64rem;
 
                 svg
                     color: $color.smoke;
+                    transition: transform 280ms ease;
 
                 &:hover
                     svg
                         color: $color.base;
-                        animation: bounce $durationXXXL infinite cubic-bezier(0, 1.01, 0, .96);
+
+                &.upvoted
+                    border-color: $color.base;
+
+                    h6, svg
+                        color: $color.base;
+
+                    &:hover
+                        svg
+                            transform: rotate(180deg);
 
             .details
                 @extend .pb7;
