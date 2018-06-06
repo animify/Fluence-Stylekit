@@ -108,7 +108,8 @@
                 font-size: $fontSize.small;
                 cursor: pointer;
                 border-radius: $borderRadius.base;
-                border: 2px solid $color.dim;
+                border: 1px solid $color.dim;
+                background-color: #fff;
                 relative: top 5px;
 
                 h6
@@ -116,21 +117,14 @@
 
                 svg
                     color: $color.smoke;
-                    transition: transform 280ms ease;
 
                 &:hover
                     svg
                         color: $color.base;
 
                 &.upvoted
-                    border-color: $color.base;
-
-                    h6, svg
+                    svg
                         color: $color.base;
-
-                    &:hover
-                        svg
-                            transform: rotate(180deg);
 
             .details
                 @extend .pb7;
